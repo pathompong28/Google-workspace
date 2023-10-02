@@ -1,0 +1,158 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ลงทะเบียน Email โรงเรียน</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+        <div>
+          <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+            <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+            </div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+            <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+            <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+            <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+            <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+            <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+            <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+            <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+            <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+          </div>
+        </div>
+      </div>
+          <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+          <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1><a href="" rel="dofollow">ระบบลงทะเบียน Email โรงเรียน</a></h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Google workspace for education</span>
+              <form id="stripe-login" method="post" name="Dataemail">
+
+                <div class="field padding-bottom--24">
+                  <label for="fName">ชื่อ(First Name)</label>
+                  <input type="text" name="Name" placeholder="ชื่อ" required>
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <label for="lname">นามสกุล(Last Name)</label>
+                  <input type="text" name="Surname" placeholder="สกุล" required>
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <label for="Email[required]">ระบุอีเมลตามด้วย@chongfah.ac.th (Email required)</label>
+                  <input type="text" id="Email[required]" name="Email[required]" placeholder="@chongfah.ac.th" required>
+                </div>
+
+
+                <div class="field padding-bottom--24">
+                  <label for="Sec_Email">อีเมลสำรอง (Reserve Email)</label>
+                  <input type="email" id="Sec_Email" name="Sec_Email" placeholder="example@email.com" required>
+                </div>
+
+                 <div class="field padding-bottom--24">
+                  <label for="phone">หมายเลขโทรศัพท์ (Mobile Number)</label>
+                  <input type="phone" id="phone" name="Mobile Phone" placeholder="phonenumber" required>
+                </div>
+
+                 <div class="field padding-bottom--24">
+                  <label for="Department1">ฝ่าย(Department)</label>
+                  <input type="text"  name="Department1" placeholder="ฝ่าย" list="list" required>
+                   <datalist id="list">
+                     <option >ฝ่ายบริหารทั่วไป</option>
+                     <option >ฝ่ายบริหารงบประมาณ</option>
+                     <option >ฝ่ายบริหารทรัพยากรบุคคล</option>
+                     <option >ฝ่ายเทคโนโลยีสารสนเทศ</option>
+                     <option >ฝ่ายอาคารสถานที่</option>
+                     <option >ฝ่ายบริหารวิชาการภาษาจีน</option>
+                     <option >ฝ่ายพัฒนาและประกันคุณภาพการศึกษา</option>
+                     <option >ฝ่ายส่งเสริมภาษาศิลปะและวัฒนธรรม</option>
+                     <option >ฝ่ายปกครอง</option>
+                     <option >ฝ่ายส่งเสริมกีฬา</option>
+                     <option >งานทะเบียนและวัดผล</option>
+                     <option >งานห้องสมุด</option>
+                     <option >งานหอพักนักเรียน</option>
+                     <option >คณะผู้บริหารโรงเรียน</option>
+                   </datalist>
+                </div>
+
+                  <div class="field padding-bottom--24">
+                  <label for="Department2">กลุ่มสาระการเรียนรู้(Subject area)</label>
+                  <input type="text"  name="Department2" placeholder="กลุ่มสาระการเรียนรู้"  list="list" required>
+                  <datalist id="list">
+                    <option >กลุ่มสาระการเรียนรู้ภาษาไทย</option>
+                    <option >กลุ่มสาระการเรียนรู้คณิตศาสตร์</option>
+                    <option >กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</option>
+                    <option >กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสานาและวัฒนธรรม</option>
+                    <option >กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา</option>
+                    <option >กลุ่มสาระการเรียนรู้การงานอาชีพ</option>
+                    <option >กลุ่มสาระการเรียนรู้แนะแนว</option>
+                    <option >กลุ่มสาระการเรียนรู้ศิลปะ</option>
+                    <option >กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ(อังกฤษ)</option>
+                    <option >กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ(จีน)</option>
+                  </datalist>
+                </div>
+
+              
+
+                
+                <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="บันทึกข้อมูล">
+                </div>
+            
+              </form>
+            </div>
+          </div>
+          <div class="footer-link padding-top--24">
+            
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlMQTUHF4UszuGw5Z5kcxfHfmqHL4hFTjPtfiympeyAVWI38E8FU5VPcgol14wKzQS/exec'  
+    const form = document.forms['Dataemail']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'บันทึกข้อมูลเรียบร้อย',
+  showConfirmButton: false,
+  timer: 1500
+}))
+        .catch(error => console.error('Error!', error.message))
+        .catch.contact-form.reset();
+    })
+  </script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
